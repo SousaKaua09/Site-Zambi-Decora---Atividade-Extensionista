@@ -70,7 +70,7 @@ header {
 
 #inicio {
     height: 100%;
-    width: 10%;
+    width: 125px;
     background-color: rgb(255, 255, 255);
 
 
@@ -94,7 +94,7 @@ header {
 
 #colecoes {
     height: 100%;
-    width: 10%;
+    width: 125px;
     background-color: rgb(255, 255, 255);
     margin-right: 0.5%;
     margin-left: 0.5%;
@@ -117,7 +117,7 @@ header {
 
 #sobre {
     height: 100%;
-    width: 10%;
+    width: 125px;
     background-color: rgb(255, 255, 255);
 
     button {
@@ -159,14 +159,14 @@ main {
 
 /* --------------CATEGORIA-------------------*/
 #categoria {
-    min-height: 260px;
+    min-height: 290px;
     width: 100%;
     background-color: rgb(236, 234, 233);
 }
 
 #fraseCategoria {
     width: 100%;
-    height: 15%;
+    height: 45px;
     background-color: rgb(236, 234, 233);
     display: flex;
     font-family: 'Montserrat', sans-serif;
@@ -195,7 +195,7 @@ main {
 
 .categoria1 {
     width: 200px;
-    min-height: 250px;
+    min-height: 200px;
     background-color: rgb(236, 234, 233);
     align-items: center;
     justify-content: center;
@@ -214,14 +214,14 @@ main {
 
 .espacamentoCategoria {
     width: 2px;
-    height: 60%;
+    height: 130px;
     margin-top: 3.2%;
     background-color: rgb(172, 171, 171);
 }
 
 .imgCategoria {
-    width: 65%;
-    height: 65%;
+    width: 130px;
+    height: 130px;
     background-color: rgb(236, 234, 233);
     border-radius: 100%;
     margin: auto;
@@ -273,25 +273,104 @@ footer {
 
 
 /*Notebook Pequeno*/
-@media (max-width: 1224px){
-    .categoria1{
-        width: 16%;
+@media (max-width: 1224px) {}
+
+@media (max-width: 1010px) {
+    /*Responsividade da categoria*/
+    #categoria {
+        min-height: 200px;
+    }
+    .categoria1 {
+        width: 150px;
+        height: 150px;
+    }
+    .imgCategoria {
+        width: 100px;
+        height: 100px;
+    }
+    .espacamentoCategoria {
+        height: 100px;
+    }
+}
+
+/*Tablet TERMINAR*/
+@media (max-width: 768px) {
+    /*Responsividade da categoria*/
+    #categoria {
+        min-height: 150px;
+    }
+    .categoria1 {
+        width: 110px;
+        height: 110px;
+    }
+    .imgCategoria {
+        width: 77px;
+        height: 77px;
+    }
+    .espacamentoCategoria {
+        height: 90px;
     }
 
 }
 
-/*Tablet*/
-@media (max-width: 768px){
-    .categoria1{
-        width: 0%;
+@media (max-width: 580px) {
+    /*Responsividade da categoria*/
+    #categoria {
+        min-height: 100px;
     }
-
+    .categoria1 {
+        width: 90px;
+        min-height: 130px;
+    }
+    .imgCategoria {
+        width: 67px;
+        height: 67px;
+    }
+    .espacamentoCategoria {
+        height: 70px;
+    }
+    #fraseCategoria {
+        font-size: 11px;
+    }
+    .textCategoria {
+        font-size: 12px;
+    }
 }
 
 /*Celular*/
-@media (max-width: 480px){
-    .categoria1{
-        width: 16%;
+@media (max-width: 480px) {
+    /*Responsividade da Links da Nav*/
+    #links {
+        height: 30px;
     }
-
+    #inicio button{
+        font-size: 10px;
+    }
+    #colecoes button{
+        font-size: 10px;
+    }
+    #sobre button{
+        font-size: 10px;
+    }
+    /*Responsividade da categoria*/
+    #categoria {
+        min-height: 50px;
+    }
+    .categoria1 {
+        width: 60px;
+        min-height: 50px;
+    }
+    .imgCategoria {
+        width: 49px;
+        height: 49px;
+    }
+    .espacamentoCategoria {
+        height: 55px;
+    }
+    #fraseCategoria {
+        font-size: 10px;
+    }
+    .textCategoria {
+        font-size: 11px;
+    }
 }
