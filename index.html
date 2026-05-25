@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <script src="js/linkar.js"></script>
     <header><!-- Cabeçalho -->
         <div id="espacoLogo">
             <div id="logo">
@@ -42,7 +43,7 @@
 
     </div>
 
-    <main><!-- "Corpo do site" -->
+    <main>
         <div id="espacoHeader"></div> <!--Espaço entre a header e o main é isso-->
         <div id="carrossel">
             <img src="..." alt="" width="100%" height="100%">
@@ -88,7 +89,55 @@
             </div>
         </div>
         <div id="destaque">
-            destaque
+            <div id="superiorDestaque">
+                <div id="tituloDestaque">
+                    <p id="fraseDestaque">DESTAQUES</p>
+                    <p id="fraseProdutos">Produtos em destaque</p>
+                </div>
+
+                <div id="botaoDestaque">
+                    <button onclick="abrirCatalogo()">VER TODOS OS PRODUTOS →</button>
+                </div>
+
+            </div>
+            <div id="areaDestaque">
+                <div id="espacoDestaque"> <!--Onde colocar os card no destaque-->
+                    <div class="cardProduto" onclick="abrirProduto()">
+                        <div class="imgCard"><img src="img/exemploimg.webp" alt=""></div>
+                        <div class="textCard">
+                            <p>Exemplo de Produto</p>
+                            <b class="valorCard">R$ 100,00</b>
+                        </div>
+                    </div>
+
+                    <div class="cardProduto" onclick="abrirProduto()">
+                        <div class="imgCard"><img src="img/exemploimg.webp" alt=""></div>
+                        <div class="textCard">
+                            <p>Exemplo de Produto</p>
+                            <b class="valorCard">R$ 100,00</b>
+                        </div>
+                    </div>
+
+                    <div class="cardProduto" onclick="abrirProduto()">
+                        <div class="imgCard"><img src="img/exemploimg.webp" alt=""></div>
+                        <div class="textCard">
+                            <p>Exemplo de Produto</p>
+                            <b class="valorCard">R$ 100,00</b>
+                        </div>
+                    </div>
+
+                    <div class="cardProduto" onclick="abrirProduto()">
+                        <div class="imgCard"><img src="img/exemploimg.webp" alt=""></div>
+                        <div class="textCard">
+                            <p>Exemplo de Produto</p>
+                            <b class="valorCard">R$ 100,00</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         </div>
 
         <div id="mensagem">

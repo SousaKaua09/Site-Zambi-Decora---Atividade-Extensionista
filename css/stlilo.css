@@ -24,6 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     position: fixed;
+    z-index: 1000;
 }
 
 #espacoLogo {
@@ -65,6 +66,8 @@ header {
     margin-top: 100px;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid #cccccc;
+    z-index: 1000;
 
 }
 
@@ -249,13 +252,133 @@ main {
 }
 
 /*--------------------------------------------------------------------*/
-
+/*-----------------DESTAQUE-------------------------------------------*/
 #destaque {
-    height: 20%;
+    min-height: 400px;
     width: 100%;
-    background-color: rgb(231, 143, 143);
+    background-color: rgb(255, 255, 255);
+}
+#superiorDestaque{
+    width: 100%;
+    height: 110px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+#tituloDestaque{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-left: 10%;
+    
+}
+#fraseDestaque{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color:  #fac43c;
 }
 
+#fraseProdutos{
+    font-size: 40px;
+    color: #002e6b;
+}
+
+#botaoDestaque{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding-right: 10%;
+    button{
+        background-color: #002e6b;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 11px;
+        letter-spacing: 1px;
+        color: rgb(255, 255, 255);
+        border-radius: 7px;
+        border: none;
+        margin-left: auto;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: #011f46;
+    }
+}
+
+#areaDestaque{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+#espacoDestaque{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+}
+
+.cardProduto{
+    width: 250px;
+    height: 270px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: 1px solid rgb(168, 168, 168);
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.cardProduto:hover{
+    transform: scale(1.03);
+    box-shadow: 4px 5px rgb(207, 207, 207); 
+    z-index: 1;
+}
+.imgCard{
+    width: 100%;
+    height: 70%;
+    background-color: cornsilk;
+    border-radius: 10px 10px 0 0;
+
+}
+.imgCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.textCard{
+    width: 100%;
+    height: 30%;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.valorCard{
+    font-size: 19px;
+    margin-top: auto;
+}
+
+
+
+
+
+/*--------------------------------------------------------------------*/
 #mensagem {
     height: 13%;
     width: 100%;
@@ -270,12 +393,16 @@ footer {
 }
 
 
+/*------RESPONSIVIDADE------*/
 
+@media (max-width: 1303px) {
 
+}
 /*Notebook Pequeno*/
-@media (max-width: 1224px) {}
+@media (max-width: 1224px) {
 
-@media (max-width: 1010px) {
+}
+@media (max-width: 1075px) {
     /*Responsividade da categoria*/
     #categoria {
         min-height: 200px;
@@ -291,13 +418,32 @@ footer {
     .espacamentoCategoria {
         height: 100px;
     }
-}
 
+    /*Responsividade do destaque*/
+    #fraseDestaque{
+        font-size: 12px;
+    }
+    #fraseProdutos{
+        font-size: 35px;
+    }
+
+    /*Responsividade do produto*/
+    .cardProduto{
+        width: 180px;
+        height: 194px;
+    }
+    .textCard{
+        font-size: 12px;
+    }
+    .valorCard{
+        font-size: 14px;
+    }
+}
 /*Tablet TERMINAR*/
 @media (max-width: 768px) {
     /*Responsividade da categoria*/
     #categoria {
-        min-height: 150px;
+        min-height: 100px;
     }
     .categoria1 {
         width: 110px;
@@ -311,8 +457,34 @@ footer {
         height: 90px;
     }
 
-}
+    /*Responsividade do destaque*/
+    #superiorDestaque{
+        height: 90px;
+    }
+    #fraseDestaque{
+        font-size: 8px;
+    }
+    #fraseProdutos{
+        font-size: 26px;
+    }
+    #botaoDestaque{
+        button{
+            font-size: 10px;
+            padding: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
 
+    /*Responsividade do produto*/
+    .cardProduto{
+        width: 180px;
+        height: 194px;
+    }
+    #espacoDestaque{
+        width: 70%;
+    }
+}
 @media (max-width: 580px) {
     /*Responsividade da categoria*/
     #categoria {
@@ -335,8 +507,29 @@ footer {
     .textCategoria {
         font-size: 12px;
     }
-}
 
+    /*Responsividade do destaque*/
+    #superiorDestaque{
+        height: 75px;
+    }
+    #fraseDestaque{
+        font-size: 7px;
+    }
+    #fraseProdutos{
+        font-size: 21px;
+    }
+    #botaoDestaque{
+        button{
+            font-size: 8px;
+            padding: 8px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    #espacoDestaque{
+        width: 95%;
+    }
+}
 /*Celular*/
 @media (max-width: 480px) {
     /*Responsividade da Links da Nav*/
@@ -352,6 +545,7 @@ footer {
     #sobre button{
         font-size: 10px;
     }
+
     /*Responsividade da categoria*/
     #categoria {
         min-height: 50px;
@@ -372,5 +566,46 @@ footer {
     }
     .textCategoria {
         font-size: 11px;
+    }
+
+    /*Responsividade do destaque*/
+    #superiorDestaque{
+        height: 65px;
+        margin-bottom: 13px;
+    }
+    #tituloDestaque{
+        width: 55%;
+    }
+    #fraseDestaque{
+        font-size: 6px;
+    }
+    #fraseProdutos{
+        font-size: 20px;
+    }
+    #botaoDestaque{
+        width: 45%;
+        padding-left: auto;
+        button{
+            font-size: 6px;
+            padding: 7px;
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+    }
+    
+    /*Responsividade do produto*/
+    .cardProduto{
+        width: 145px;
+        height: 155px;
+        margin-bottom: 13px;
+    }
+    #espacoDestaque{
+        width: 95%;
+    }
+    .textCard{
+        font-size: 10px;
+    }
+    .valorCard{
+        font-size: 10px;
     }
 }
