@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    /* Mudar no final a proporção corretamente e alterar o main e o footer */
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#areaBotaoVoltar {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    margin-bottom: 1%;
+
+    button {
+        border: none;
+        padding: 5px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        -webkit-text-stroke: 0.2px currentColor;
+        letter-spacing: 1px;
+        font-size: 13px;
+        background-color: white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: rgb(201, 201, 201);
+
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+#informacaoProduto{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.imagemProduto{
+    height: 100%;
+    width: 700px;
+    display: flex;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.miniaturaImgProduto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.miniaturaImgProduto img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 3px solid #c9a86a transparent;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.ativa{
+    outline: 3px solid #c9a86a;
+    outline-offset: 2px;
+}
+
+.miniaturaImgProduto img:hover{
+    transform: scale(1.05);
+}
+
+.imagemPrincipalProduto img{
+    width: 550px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal img{
+    height: 85%;
+    border-radius: 20px;
+}
+
+#dadosProduto{
+    height: 100%;
+    width: 450px;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    flex-direction: column;
+    display: flex;
+}
+
+#fraseCategoriaProduto{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 10px;
+    color: #c9a86a;
+    gap: 11px;
+    margin-bottom: 1%;
+}
+
+#nomeProduto{
+    width: 100%;
+    height: 73px;
+    font-weight: 500;
+    -webkit-text-stroke: 0.5px currentColor;
+    font-size: 33px;
+    color:  #011f46;
+}
+
+#valorProduto{
+    font-weight: 500;
+    -webkit-text-stroke: 0.3px currentColor;
+    font-size: 30px;
+    color:  #011f46;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+#descricaoProduto{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 15px;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    -webkit-text-stroke: 0.2px currentColor;
+
+}
+#linhaDescricao{
+    height: 2px;
+    width: 45%;
+    background-color: #c9a86a;
+    margin-top: auto;
+}
+#mensagemProduto{
+    width: 90%;
+    height: 60px;
+    background-color: #f1ede5;
+    display: flex;
+    margin-top: 5%;
+    border-radius: 8px;
+    align-items: center;
+    padding-left: 3%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    -webkit-text-stroke: 0.2px currentColor;
+    font-size: 13px;
+
+}
+#mensagemBonita{
+    margin-left: 3%;
+    display: flex;
+
+}
+#mensagemProduto img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+#botaoProduto{
+    margin-top: 5%;
+    button{
+        padding: 11px;
+        padding-left: 45px;
+        padding-right: 45px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 11px;
+        letter-spacing: 2px;
+        background-color: #c9a86a;
+        color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: #a08656;
+    }
+}
