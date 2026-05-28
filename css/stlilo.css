@@ -435,7 +435,7 @@ footer {
         font-size: 14px;
     }
 }
-/*Tablet TERMINAR*/
+/*Tablet*/
 @media (max-width: 768px) {
     /*Responsividade da categoria*/
     #categoria {

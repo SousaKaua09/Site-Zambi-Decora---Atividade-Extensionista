@@ -45,17 +45,20 @@ a{
 }
 
 #informacaoProduto{
-    height: 400px;
+    height: auto;
     width: 100%;
     background-color: rgb(255, 255, 255);
     display: flex;
     padding-left: 5%;
     padding-right: 5%;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
 
 .imagemProduto{
-    height: 100%;
-    width: 700px;
+    height: auto;
+    max-width: 700px;
     display: flex;
     gap: 20px;
     background-color: rgb(255, 255, 255);
@@ -114,8 +117,8 @@ a{
 }
 
 #dadosProduto{
-    height: 100%;
-    width: 450px;
+    height: 400px;
+    max-width: 450px;
     background-color: rgb(255, 255, 255);
     margin-left: auto;
     flex-direction: column;
@@ -156,6 +159,7 @@ a{
     padding-bottom: 10px;
     padding-top: 10px;
     padding-right: 15px;
+    margin-bottom: 2%;
     font-size: 13px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -177,6 +181,7 @@ a{
     border-radius: 8px;
     align-items: center;
     padding-left: 3%;
+    padding-right: 4%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     -webkit-text-stroke: 0.2px currentColor;
@@ -212,5 +217,346 @@ a{
     }
     button:hover{
         background-color: #a08656;
+    }
+}
+
+
+
+/*------RESPONSIVIDADE------*/
+
+@media (max-width: 1303px) {
+
+}
+/*Notebook Pequeno*/
+@media (max-width: 1245px) {
+    /*Responsividade imagens*/
+    .miniaturaImgProduto img{
+        width: 83px;
+        height: 83px;
+    }
+
+    .imagemPrincipalProduto img{
+        width: 500px;
+        height: 364px;
+    }
+
+    .modal img{
+        height: 80%;
+        width: auto;
+    }
+    /*Responsividade informação*/
+    #dadosProduto{
+        max-width: 420px;
+        height: 370px;
+    }
+    
+    #fraseCategoriaProduto{
+        font-size: 9px;
+    }
+
+    #nomeProduto{
+        font-size: 30px;
+    }
+    #valorProduto {
+        font-size: 27px;
+    }
+    #descricaoProduto {
+        font-size: 12px;
+    }
+    #mensagemProduto{
+        font-size: 12px;
+    }
+    #botaoProduto {
+        button{
+            padding: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            font-size: 10px;
+        }
+
+    }
+}
+
+
+@media (max-width: 1149px) {
+    
+    #areaBotaoVoltar{
+        button{
+            font-size: 12px;
+        }
+    }
+    /*Responsividade imagens*/
+    .miniaturaImgProduto img{
+        width: 73px;
+        height: 73px;
+    }
+
+    .imagemPrincipalProduto img{
+        width: 450px;
+        height: 327px;
+    }
+
+
+    /*Responsividade informação*/
+    #dadosProduto{
+        max-width: 390px;
+        height: 340px;
+    }
+    
+    #fraseCategoriaProduto{
+        font-size: 8px;
+    }
+
+    #nomeProduto{
+        font-size: 27px;
+    }
+    #valorProduto {
+        font-size: 24px;
+    }
+    #descricaoProduto {
+        font-size: 11px;
+    }
+    #mensagemProduto{
+        font-size: 11px;
+    }
+    #botaoProduto {
+        button{
+            padding: 9px;
+            padding-left: 35px;
+            padding-right: 35px;
+            font-size: 9px;
+        }
+
+    }
+}
+
+@media (max-width: 1048px){
+    #informacaoProduto{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+@media (max-width: 984px){
+
+    #areaBotaoVoltar{
+        button{
+            font-size: 11px;
+        }
+    }
+    /*Responsividade imagens*/
+    .miniaturaImgProduto img{
+        width: 83px;
+        height: 83px;
+    }
+
+    .imagemPrincipalProduto img{
+        width: 500px;
+        height: 364px;
+    }
+
+    .imagemProduto{
+        margin-bottom: 25px;
+    }
+
+
+    /*Responsividade informação*/
+    #dadosProduto{
+        max-width: 605px;
+        height: 370px;
+        margin-left: 0px;
+    }
+    
+    #fraseCategoriaProduto{
+        font-size: 9px;
+    }
+
+    #nomeProduto{
+        font-size: 30px;
+    }
+    #valorProduto {
+        font-size: 27px;
+    }
+    #descricaoProduto {
+        font-size: 12px;
+    }
+    #mensagemProduto{
+        font-size: 12px;
+        padding-left: 5%;
+    }
+    #botaoProduto {
+        margin-left: auto;
+        button{
+            padding: 11px;
+            padding-left: 45px;
+            padding-right: 45px;
+            font-size: 11px;
+        }
+
+    }
+}
+
+
+@media (max-width: 660px){
+    #areaBotaoVoltar{
+        button{
+            font-size: 10px;
+        }
+    }
+    /*Responsividade imagens*/
+    .miniaturaImgProduto img{
+        width: 73px;
+        height: 73px;
+    }
+
+    .imagemPrincipalProduto img{
+        width: 450px;
+        height: 327px;
+    }
+    .modal img{
+        height: auto;
+        width: 70%;
+    }
+
+    /*Responsividade informação*/
+    #dadosProduto{
+        max-width: 543px;
+        height: 340px;
+    }
+    
+    #fraseCategoriaProduto{
+        font-size: 8px;
+    }
+
+    #nomeProduto{
+        font-size: 27px;
+    }
+    #valorProduto {
+        font-size: 24px;
+    }
+    #descricaoProduto {
+        font-size: 11px;
+    }
+    #mensagemProduto{
+        font-size: 11px;
+    }
+    #botaoProduto {
+        button{
+            padding: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            font-size: 10px;
+        }
+
+    }
+}
+
+@media (max-width:580px){
+    /*Responsividade imagens*/
+    .imagemProduto{
+        flex-direction: column-reverse;
+    }
+
+    .miniaturaImgProduto {
+        display: flex;
+        justify-content:space-around;
+        flex-direction: initial;  
+    }
+    .miniaturaImgProduto img{
+        width: 73px;
+        height: 73px;
+    }
+
+    .imagemPrincipalProduto img{
+        width: 400px;
+        height: 291px;
+    }
+    .imagemProduto{
+        margin-bottom: 25px;
+    }
+
+    .modal img{
+        height: auto;
+        width: 80%;
+    }
+    /*Responsividade informação*/
+    #dadosProduto{
+        max-width: 405px;
+        height: 315px;
+    }
+    
+    #fraseCategoriaProduto{
+        font-size: 8px;
+    }
+
+    #nomeProduto{
+        font-size: 24px;
+        height: 55px;
+    }
+    #valorProduto {
+        font-size: 21px;
+    }
+    #descricaoProduto {
+        font-size: 10px;
+    }
+    #mensagemProduto{
+        font-size: 10px;
+    }
+    #botaoProduto {
+        button{
+            padding: 9px;
+            padding-left: 35px;
+            padding-right: 35px;
+            font-size: 9px;
+        }
+
+    }
+}
+
+@media (max-width: 450px){
+    /*Responsividade imagens*/
+    .miniaturaImgProduto img{
+        width: 58px;
+        height: 58px;
+    }
+
+    .imagemPrincipalProduto img{
+        width: 320px;
+        height: 237px;
+    }
+    .imagemProduto{
+        margin-bottom: 20px;
+    }
+
+    /*Responsividade informação*/
+    #dadosProduto{
+        max-width: 320px;
+        height: 300px;
+    }
+    
+    #fraseCategoriaProduto{
+        font-size: 8px;
+    }
+
+    #nomeProduto{
+        font-size: 20px;
+        height: 55px;
+    }
+    #valorProduto {
+        font-size: 18px;
+    }
+    #descricaoProduto {
+        font-size: 10px;
+    }
+    #mensagemProduto{
+        font-size: 9px;
+    }
+    #botaoProduto {
+        button{
+            padding: 8px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 8px;
+        }
+
     }
 }
