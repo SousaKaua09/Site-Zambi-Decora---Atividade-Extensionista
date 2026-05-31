@@ -54,6 +54,7 @@ a{
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    margin-bottom: 60px;
 }
 
 .imagemProduto{
@@ -221,6 +222,109 @@ a{
 }
 
 
+#sugestaoProduto{
+    background-color: #f1ede5;
+    height: auto;
+    width: 100%;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+#tituloSugestao{
+    height: 25px;
+    width: 100%;
+    background-color: #f1ede5;
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+    justify-content: center;
+    p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 11px;
+        color: #c9a86a;
+        margin-left: 23px;
+        margin-right: 23px;
+    }
+}
+
+#detalheLinha{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 11px;
+    color: #c9a86a;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.linhaCate{
+    width: 10%;
+}
+
+#sugestaoCards{
+    background-color: #f1ede5;
+    height: auto;
+    min-width: 605px;
+}
+
+#espacoDestaque{
+    background-color: #f1ede5;
+
+}
+
+.cardProduto{
+    width: 200px;
+    height: 220px;
+    margin-right: 25px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.textCard{
+    font-size: 13px;
+}
+.valorCard{
+    font-size: 16px;
+}
+
+#imagemSugestao{
+    width: 515px;
+    height: 245px;
+    background-color: #f1ede5;
+    margin-left: auto;
+    border-radius: 10px;
+    border: 2px solid #dfd4b8;
+    box-sizing: border-box;
+
+}
+
+#imagemSugestao img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*------RESPONSIVIDADE------*/
 
@@ -275,6 +379,14 @@ a{
         }
 
     }
+    /*Resposividade Sugestão*/
+    #sugestaoCards{
+        min-width: 530px;
+    }
+    #imagemSugestao{
+        width: 500px;
+        height: 238px;
+    }
 }
 
 
@@ -328,10 +440,36 @@ a{
         }
 
     }
+    /*Resposividade Sugestão*/
+    #sugestaoCards{
+        min-width: 490px;
+    }
+    #imagemSugestao{
+        width: 450px;
+        height: 214px;
+    }
+    .cardProduto{
+        width: 190px;
+        height: 210px;
+        margin-right: 25px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .textCard{
+        font-size: 12px;
+    }
+    .valorCard{
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 1048px){
     #informacaoProduto{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    #sugestaoProduto{
         padding-left: 2%;
         padding-right: 2%;
     }
@@ -393,6 +531,33 @@ a{
         }
 
     }
+    /*Resposividade Sugestão*/
+    #espacoDestaque{
+        width: 100%;
+    }
+
+    #sugestaoCards{
+        min-width: 100%;
+    }
+    #imagemSugestao{
+        width: 500px;
+        height: 238px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .cardProduto{
+        width: 200px;
+        height: 220px;
+        margin-right: 25px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .textCard{
+        font-size: 13px;
+    }
+    .valorCard{
+        font-size: 16px;
+    }
 }
 
 
@@ -448,6 +613,27 @@ a{
         }
 
     }
+    /*Resposividade Sugestão*/
+    #imagemSugestao{
+        width: 450px;
+        height: 214px;
+        margin-bottom: 15px;
+    }
+    .cardProduto{
+        width: 190px;
+        height: 210px;
+        margin-right: 25px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .textCard{
+        font-size: 12px;
+    }
+    .valorCard{
+        font-size: 15px;
+    }
+
 }
 
 @media (max-width:580px){
@@ -510,6 +696,37 @@ a{
         }
 
     }
+
+    /*Resposividade Sugestão*/
+    #imagemSugestao{
+        width: 400px;
+        height: 190px;
+        margin-bottom: 15px;
+    }
+
+    #tituloSugestao{
+        padding-right: 10px;
+        p {
+            font-size: 9px;
+        }
+    }
+    #detalheLinha{
+        font-size: 9px;
+    }
+    .cardProduto{
+        width: 170px;
+        height: 190px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    .textCard{
+        font-size: 12px;
+    }
+    .valorCard{
+        font-size: 13px;
+    }
+
 }
 
 @media (max-width: 450px){
@@ -559,4 +776,39 @@ a{
         }
 
     }
+
+    /*Resposividade Sugestão*/
+    #sugestaoProduto{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #imagemSugestao{
+        width: 300px;
+        height: 143px;
+        margin-bottom: 15px;
+    }
+
+    #tituloSugestao{
+        padding-right: 0px;
+        p {
+            font-size: 8px;
+        }
+    }
+    #detalheLinha{
+        font-size: 8px;
+    }
+    .cardProduto{
+        width: 150px;
+        height: 170px;
+        margin-right: 0px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    .textCard{
+        font-size: 10px;
+    }
+    .valorCard{
+        font-size: 11px;
+    }
+
 }

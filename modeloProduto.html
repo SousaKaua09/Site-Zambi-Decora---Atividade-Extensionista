@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
 </head>
+
 <body>
     <script src="js/linkar.js"></script>
 
@@ -37,10 +39,47 @@
             <div id="fraseCategoriaProduto">CATEGORIA DO PRODUTO</div>
             <div id="nomeProduto">Nome do Produto Grande pra Testar</div>
             <div id="valorProduto">R$ 1001,99</div>
-            <div id="descricaoProduto"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis explicabo a non unde voluptas quos voluptatibus, dignissimos ad nostrum officia sequi recusandae totam cumque accusantium iure illo facilis distinctio mollitia.</p></div>
+            <div id="descricaoProduto">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis explicabo a non unde voluptas quos
+                    voluptatibus, dignissimos ad nostrum officia sequi recusandae totam cumque accusantium iure illo
+                    facilis distinctio mollitia.</p>
+            </div>
             <div id="linhaDescricao"></div>
-            <div id="mensagemProduto"><img src="img/exemplodoque fazer.png" alt=""><p id="mensagemBonita">Cada peça carrega uma essência única, feita com cuidado e alma artesanal.</p></div>
+            <div id="mensagemProduto"><img src="img/exemplodoque fazer.png" alt="">
+                <p id="mensagemBonita">Cada peça carrega uma essência única, feita com cuidado e alma artesanal.</p>
+            </div>
             <div id="botaoProduto"><a href=""></a><button>COMPRAR PRODUTO</a></button></div>
+        </div>
+    </div>
+
+
+    <div id="sugestaoProduto">
+        <div id="sugestaoCards">
+            <div id="tituloSugestao">               
+                <div id="detalheLinha">⋘◊</div><div class="linhaCate"></div>
+                <p>VOCÊ PODE GOSTAR</p>
+                <div class="linhaCate"></div><div id="detalheLinha">◊⋙</div>
+            </div>
+            <div id="espacoDestaque"> <!--Onde colocar os card no destaque-->
+                <div class="cardProduto" onclick="abrirProduto()">
+                    <div class="imgCard"><img src="img/exemploimg.webp" alt=""></div>
+                    <div class="textCard">
+                        <p>Exemplo de Produto nome grande big</p>
+                        <b class="valorCard">R$ 100,00</b>
+                    </div>
+                </div>
+
+                <div class="cardProduto" onclick="abrirProduto()">
+                    <div class="imgCard"><img src="img/exemploimg.webp" alt=""></div>
+                    <div class="textCard">
+                        <p>Exemplo de Produto</p>
+                        <b class="valorCard">R$ 100,00</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="imagemSugestao">
+            <img src="img/exemplosugestaozinha.png" alt="">
         </div>
     </div>
 
@@ -50,7 +89,7 @@
 
 
 
-
     <script src="js/imagem.js"></script>
 </body>
+
 </html>
