@@ -3,7 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
 body {
     height: 2000px;
@@ -13,14 +16,14 @@ body {
 }
 
 #espacoHeader {
-    height: 140px;
+    height: 100px;
     width: 100%;
 }
 
 header {
-    height: 100px;
+    height: 60px;
     width: 100%;
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -29,30 +32,27 @@ header {
 
 #espacoLogo {
     height: 100%;
-    width: 30%;
-    background-color: aqua;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-left: 5%;
 }
 
 #logo {
-    height: 85%;
-    width: 75%;
-    background-color: aquamarine;
+    height: 100%;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    }
+#logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-#espacovago {
+#detalheNav {
     height: 100%;
-    width: 30%;
-    background-color: rgb(94, 255, 0);
-    display: flex;
-}
-
-#lupa {
-    height: 100%;
-    width: 35%;
-    background-color: rgb(255, 166, 0);
+    width: 40%;
+    background-color: rgb(255, 255, 255);
     display: flex;
 }
 
@@ -63,7 +63,7 @@ header {
     background-color: rgb(255, 255, 255);
     display: flex;
     position: fixed;
-    margin-top: 100px;
+    margin-top: 60px;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     border-bottom: 1px solid #cccccc;
@@ -381,11 +381,138 @@ main {
     background-color: rgb(238, 231, 127);
 }
 
+/*----------FOOTER--------------*/
 footer {
-    height: 10%;
+    height: 300px;
     width: 100%;
-    background-color: rgb(154, 190, 178);
-    text-align: center;
+    background-color:#002e6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#espacoFooter{
+    width: 1000px;
+    height: 200px;
+    background-color:#002e6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footerLogo{
+    height: 100%;
+    width: 33%;
+    background-color:#002e6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footerLogo img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#footerSobre{
+    height: 100%;
+    width: 33%;
+    background-color:#002e6b;
+}
+.tituloFooter{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #c9a86a;
+    margin-top: 15%;
+    margin-left: 20%;
+}
+.miniLinhaFooter{
+    width: 50px;
+    height: 2px;
+    background-color: #c9a86a;
+    margin-left: 20%;
+    margin-top: 4%;
+}
+#sobreFooter{
+    color: white;
+    margin-left: 20%;
+    margin-top: 6%;
+}
+#footerSiga{
+    height: 100%;
+    width: 33%;
+    background-color: #002e6b;
+}
+#perfisFooter{
+    width: 180px;
+    height: 45px;
+    background-color: #002e6b;
+    margin-left: 20%;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 6%;
+}
+
+.sigaPerfil{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: #002e6b;
+    cursor: pointer;
+    border: 2px solid #c9a86a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sigaPerfil img{
+    width: 70%;
+    height: 70%;
+}
+.sigaPerfil:hover{
+    background-color: #011f46;
+    transform: translateY(-2px);
+}
+
+.linhaFooter{
+    height: 100%;
+    width: 2px;
+    background-color: #c9a86a;
+}
+
+#baixoFooter{
+    width: 100%;
+    height: 30px;
+}
+
+#linhaDecoFooter{
+    width: 100%;
+    height: 30px;
+    background-color: #002e6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#linhaDecoFooter img{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.linhaBaixo{
+    width: 29%;
+    height: 1px;
+    background-color: #c9a86a;
+}
+#direitosFooter{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #002e6b;
+    padding-top: 10px;
 }
 
 
@@ -480,8 +607,55 @@ footer {
     #espacoDestaque{
         width: 70%;
     }
+
+    /*Responsividade do Footer*/
+    footer{
+        height: 240px;
+    }
+    #espacoFooter{
+        width: 600px;
+        height: 150px;
+    }
+    #footerLogo img{
+        width: 150px;
+        height: 150px;
+    }
+    .tituloFooter{
+        font-size: 12px;
+    }
+    .miniLinhaFooter{
+        width: 40px;
+    }
+    #sobreFooter{
+        font-size: 13px;
+    }
+    #perfisFooter{
+        width: 140px;
+    }
+    .sigaPerfil {
+        width: 35px;
+        height: 35px;
+    }
+    #direitosFooter{
+        font-size: 13px;
+        height: 50px;
+        padding-top: 5px;
+    }
 }
 @media (max-width: 580px) {
+    /*Responsividade da Links da Nav*/
+    #links {
+        height: 30px;
+    }
+    #inicio button{
+        font-size: 10px;
+    }
+    #colecoes button{
+        font-size: 10px;
+    }
+    #sobre button{
+        font-size: 10px;
+    }
     /*Responsividade da categoria*/
     #categoria {
         min-height: 100px;
@@ -524,6 +698,44 @@ footer {
     }
     #espacoDestaque{
         width: 95%;
+    }
+    
+    /*Responsividade do Footer*/
+    footer{
+        height: 200px;
+    }
+    #espacoFooter{
+        width: 500px;
+        height: 125px;
+    }
+    #footerLogo img{
+        width: 125px;
+        height: 125px;
+    }
+    .tituloFooter{
+        font-size: 10px;
+    }
+    .miniLinhaFooter{
+        width: 35px;
+    }
+    #sobreFooter{
+        font-size: 12px;
+    }
+    #perfisFooter{
+        width: 110px;
+    }
+    .sigaPerfil {
+        width: 27px;
+        height: 27px;
+    }
+    #linhaDecoFooter img{
+        width: 30px;
+        height: 30px;
+    }
+    #direitosFooter{
+        font-size: 12px;
+        height: 40px;
+        padding-top: 5px;
     }
 }
 /*Celular*/
@@ -603,5 +815,52 @@ footer {
     }
     .valorCard{
         font-size: 10px;
+    }
+
+    /*Responsividade do Footer*/
+    footer{
+        height: 350px;
+    }
+    #espacoFooter{
+        width: 500px;
+        height: 125px;
+        flex-direction: column;
+    }
+    #footerLogo img{
+        width: 150px;
+        height: 150px;
+    }
+    .tituloFooter{
+        font-size: 12px;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    .miniLinhaFooter{
+        width: 35px;
+        margin-left: 0px;
+        margin-top: 7px;
+    }
+    #sobreFooter{
+        font-size: 13px;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    #perfisFooter{
+        width: 110px;
+        margin-left: 0px;
+        margin-top: 12px;
+    }
+    .sigaPerfil {
+        width: 27px;
+        height: 27px;
+    }
+    #linhaDecoFooter img{
+        width: 30px;
+        height: 30px;
+    }
+    #direitosFooter{
+        font-size: 12px;
+        height: 40px;
+        padding-top: 5px;
     }
 }
