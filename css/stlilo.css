@@ -9,8 +9,7 @@ a{
 }
 
 body {
-    height: 2000px;
-    /* Mudar no final a proporção corretamente e alterar o main e o footer */
+    height: auto;
     width: 100%;
 
 }
@@ -35,7 +34,7 @@ header {
     width: 40%;
     background-color: rgb(255, 255, 255);
     display: flex;
-    padding-left: 5%;
+        padding-left: 5%;
 }
 
 #logo {
@@ -46,7 +45,7 @@ header {
 #logo img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 #detalheNav {
@@ -54,6 +53,20 @@ header {
     width: 40%;
     background-color: rgb(255, 255, 255);
     display: flex;
+    justify-content: flex-end;
+}
+
+#imagemDetalhes{
+    height: 100%;
+    width: 450px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+#imagemDetalhes img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 /*-------------------------------NAV BOTÕES-------------------------------------*/
@@ -151,13 +164,26 @@ header {
 main {
     height: 100%;
     width: 100%;
-    background-color: rgb(60, 47, 73);
+    background-color: rgb(255, 255, 255);
 }
 
 #carrossel {
-    height: 23%;
     width: 100%;
+    aspect-ratio: 16/5.50;
+    overflow: hidden;
     background-color: darkkhaki;
+}
+
+#carrossel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#espaçoCarro{
+    width: 100%;
+    height: 25px;
+    background-color: rgb(236, 234, 233);
 }
 
 /* --------------CATEGORIA-------------------*/
@@ -376,9 +402,18 @@ main {
 
 /*--------------------------------------------------------------------*/
 #mensagem {
-    height: 13%;
     width: 100%;
-    background-color: rgb(238, 231, 127);
+    aspect-ratio: 16/3.5;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
+    border-top: 1px solid rgb(233, 232, 232);
+}
+
+#mensagem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /*----------FOOTER--------------*/
@@ -389,6 +424,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 2px solid #c9a86a;
 }
 #espacoFooter{
     width: 1000px;
@@ -437,6 +473,11 @@ footer {
     color: white;
     margin-left: 20%;
     margin-top: 6%;
+}
+
+#sobreFooter:hover{
+    color: #c4c4c4;
+    transform: translateY(-2px);    
 }
 #footerSiga{
     height: 100%;

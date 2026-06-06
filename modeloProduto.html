@@ -16,6 +16,32 @@
 <body>
     <script src="js/linkar.js"></script>
 
+    <header><!-- Cabeçalho -->
+        <div id="espacoLogo">
+            <div id="logo">
+                <img src="img/Logo-Header.png" alt="">
+            </div>
+        </div>
+
+        <div id="detalheNav">
+            <div id="imagemDetalhes"><img src="img/Design sem nome 7.png" alt=""></div>
+        </div>
+    </header>
+    <div id="links">
+        <div id="inicio">
+            <a href="index.html"><button>Início</button></a>
+        </div>
+        <div id="colecoes">
+            <a href="catalogo.html"><button>Catálogo</button></a>
+        </div>
+        <div id="sobre">
+            <a href="sobre.html"><button>Sobre Nós</button></a>
+        </div>
+
+    </div>
+    <div id="espacoHeader"></div> <!--Espaço entre a header e o main é isso-->
+
+
     <div id="areaBotaoVoltar">
         <button id="botaoVoltar" onclick="voltarPagina()"> ← Voltar</button>
     </div>
@@ -45,7 +71,7 @@
                     facilis distinctio mollitia.</p>
             </div>
             <div id="linhaDescricao"></div>
-            <div id="mensagemProduto"><img src="img/exemplodoque fazer.png" alt="">
+            <div id="mensagemProduto"><img src="img/flor-icone-produto.png" alt="">
                 <p id="mensagemBonita">Cada peça carrega uma essência única, feita com cuidado e alma artesanal.</p>
             </div>
             <div id="botaoProduto"><a href=""></a><button>COMPRAR PRODUTO</a></button></div>
@@ -79,15 +105,42 @@
             </div>
         </div>
         <div id="imagemSugestao">
-            <img src="img/exemplosugestaozinha.png" alt="">
+            <img src="img/imagemSugestaoHistoria.png" alt="">
         </div>
     </div>
 
-
-
-
-
-
+    <footer><!-- Rodapé -->
+        <div id="espacoFooter">
+            
+            <div id="footerLogo">
+                <img src="img/Cartao zambi.jpg" alt="">
+            </div>
+            <div class="linhaFooter"></div>
+            <div id="footerSobre">
+                <p class="tituloFooter">INSTITUCIONAL</p>
+                <div class="miniLinhaFooter"></div>
+                <a href="sobre.html"><p id="sobreFooter">Sobre nós</p></a>
+            </div>
+            <div class="linhaFooter"></div>
+            <div id="footerSiga">
+                <p class="tituloFooter">SIGA-NOS</p>
+                <div class="miniLinhaFooter"></div>
+                <div id="perfisFooter">
+                    <div class="sigaPerfil" onclick="abrirInsta()"><img src="img/instagram-icon.png" alt=""></div>
+                    <div class="sigaPerfil" onclick="abrirFace()"><img src="img/facebook-icon.png" alt=""></div><!--Ainda tem que fazer as contas -->
+                    <div class="sigaPerfil" onclick="abrirPin()"><img src="img/pinterest-icon.png" alt=""></div><!--Ainda tem que fazer as contas -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="baixoFooter">
+        <div id="linhaDecoFooter">
+            <div class="linhaBaixo"></div>
+            <img src="img/flower-icon.png" alt="">
+            <div class="linhaBaixo"></div>
+        </div>
+        <div id="direitosFooter">© 2026 Zambi Decora. Todos os direitos reservados.</div>
+    </div>
 
     <script src="js/imagem.js"></script>
 </body>

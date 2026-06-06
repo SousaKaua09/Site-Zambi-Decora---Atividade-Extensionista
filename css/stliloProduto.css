@@ -195,8 +195,8 @@ a{
 
 }
 #mensagemProduto img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     object-fit: cover;
 }
 
@@ -232,6 +232,7 @@ a{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 
 }
 
@@ -310,20 +311,6 @@ a{
     object-fit:cover;
     border-radius: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*------RESPONSIVIDADE------*/
@@ -696,6 +683,11 @@ a{
         }
 
     }
+    #mensagemProduto img{
+    width: 30px;
+    height: 30px;
+    }
+
 
     /*Resposividade Sugestão*/
     #imagemSugestao{

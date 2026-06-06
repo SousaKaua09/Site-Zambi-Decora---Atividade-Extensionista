@@ -1,0 +1,133 @@
+#areaBotaoVoltar {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    button {
+        border: none;
+        padding: 5px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        -webkit-text-stroke: 0.2px currentColor;
+        letter-spacing: 1px;
+        font-size: 13px;
+        background-color: white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: rgb(201, 201, 201);
+
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+#catalogoProduto {
+    min-height: 400px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 80px;
+}
+#superiorCatalogo{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+#tituloCatalogo{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    display: flex;
+    
+}
+
+#fraseCatalogo{
+    font-size: 40px;
+    color:  #c9a86a;
+}
+
+#areaCatalogo{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+#espacoCatalogo{
+    width: 100%;
+    max-width: 1045px;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 14px;
+}
+
+/*------RESPONSIVIDADE------*/
+
+@media (max-width: 1075px){
+    #areaBotaoVoltar{
+        button{
+            font-size: 11px;
+        }
+    }
+    #espacoCatalogo{
+        width: 100%;
+        max-width: 768px;
+    }
+    #fraseCatalogo{
+    font-size: 34px;
+    }
+    #superiorCatalogo{
+        height: 80px;
+    }
+}
+
+@media (max-width: 768px){
+    #areaBotaoVoltar{
+        button{
+            font-size: 10px;
+        }
+    }
+    #espacoCatalogo{
+        width: 100%;
+        max-width: 580px;
+    }
+    #fraseCatalogo{
+    font-size: 30px;
+    }
+    #superiorCatalogo{
+        height: 70px;
+    }
+}
+
+@media (max-width: 580px){
+    #espacoCatalogo{
+        width: 100%;
+        max-width: 480px;
+        padding-left: 50px;
+    }
+}
+@media (max-width: 480px){
+    #espacoCatalogo{
+        width: 100%;
+        max-width: 320px;
+        padding-left: 8px;
+
+    }
+    #fraseCatalogo{
+    font-size: 25px;
+    }
+    #superiorCatalogo{
+        height: 50px;
+    }
+}

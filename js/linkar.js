@@ -3,7 +3,7 @@ function abrirProduto(){
 }
 
 function abrirCatalogo(){
-    window.location.href = "index.html"
+    window.location.href = "catalogo.html"
 }
 
 function voltarPagina(){
