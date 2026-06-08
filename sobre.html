@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zambi Decora</title>
     <link rel="stylesheet" href="css/stlilo.css">
+    <link rel="stylesheet" href="css/stiloSobre.css">
+    <link rel="stylesheet" href="css/stliloProduto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <style>
-        #inicio{ /*Esse css é só para alterar a linha dos botões*/
-            button{
+        #inicio {
+
+            /*Esse css é só para alterar a linha dos botões*/
+            button {
                 text-decoration-color: #ffffff;
                 text-decoration-line: underline;
                 text-decoration-thickness: 0px;
                 text-underline-offset: 0px
             }
         }
-        #sobre{
-            button{
+
+        #sobre {
+            button {
                 text-decoration-color: #c9a86a;
                 text-decoration-line: underline;
                 text-decoration-thickness: 2px;
@@ -53,5 +61,124 @@
 
     </div>
     <div id="espacoHeader"></div> <!--Espaço entre a header e o main é isso-->
+    <div id="areaBotaoVoltar">
+        <button id="botaoVoltar" onclick="voltarPagina()"> ← Voltar</button>
+    </div>
+
+    <div id="sobreNos">
+        <div id="tituloSobreNos">Sobre Nós</div>
+        <div id="fraseSobreNos">
+            <div id="espacoFraseSobre">
+                <h2>"Peças que carregam beleza, personalidade e significado."</h2>
+                <p>Na Zambi Decora, cada criação nasce do cuidado com os detalhes e da paixão pelo artesanato. Produzimos peças que transformam ambientes, valorizam histórias e levam mais charme e autenticidade para cada lar.</p>
+            </div>
+        </div>
+        <div id="todoespacoSobreNos">
+            <div id="espacoSobreNos">
+                <div id="imgNossaHistoria"><img src="img/sereia parede apagada.jpg" alt=""></div>
+                <div id="nossaHistoria">
+                    <p id="tituloHistoria">Nossa História</p>
+                    <div id="linhaHistoria"></div>
+                    <p>A Zambi Decora nasceu do amor pelos detalhes e da paixão por transformar ambientes através do artesanato. Cada peça é criada com dedicação, combinando beleza, personalidade e autenticidade para tornar cada espaço mais acolhedor e especial.</p><br>
+                    <p>Acreditamos que a decoração vai além dos objetos. Ela guarda memórias, expressa sentimentos e revela a essência de quem vive em cada lar. Por isso, buscamos criar produtos que levem charme, significado e exclusividade para cada ambiente.</p><br>
+                    <p>Mais do que decorar, queremos fazer parte das histórias que tornam cada casa única.</p>
+                </div>
+            </div>
+            <div id="espacoSobreNos">
+                <div id="nossaHistoria">
+                    <p id="tituloHistoria">Nossa Essência</p>
+                    <div id="linhaHistoria"></div>
+                    <p>Cada criação da Zambi Decora é desenvolvida com cuidado, valorizando o trabalho artesanal e a atenção aos acabamentos. Utilizamos combinações de materiais, cores e texturas que trazem equilíbrio, elegância e personalidade para a decoração.</p><br>
+                    <p>Nossos colares de cortina, abraçadeiras, colares de mesa e peças decorativas são pensados para destacar os pequenos detalhes que fazem toda a diferença em um ambiente.</p><br>
+                    <p>Porque acreditamos que são os detalhes que transformam espaços em lares e objetos em lembranças especiais.</p>
+                </div>
+                <div id="imgNossaHistoria"><img src="img/text.jpg" alt=""></div>
+            </div>
+        </div>
+
+        <div id="tornarEspeciais">
+            <div class="titulosEspeciais">
+                <div class="linhaTitulosEspeciais"></div>
+                <p>O QUE NOS TORNA ESPECIAIS</p>
+                <div class="linhaTitulosEspeciais"></div>
+            </div>
+            <div id="espacoEspeciais">
+                <div class="artesanalEspeciais">
+                    <div class="imgEspeciais"><img src="img/hand-holding-plant-especiais.png" alt=""></div>
+                    <h2>Artesanal</h2>
+                    <p>Cada peça é feita</p>
+                    <p>á mão com cuidado</p>
+                    <p>e dedicação.</p>
+                </div>
+                <div class="linhaEspeciais"></div>
+                <div class="artesanalEspeciais">
+                    <div class="imgEspeciais"><img src="img/diamond-especiais.png" alt=""></div>
+                    <h2>Exclusivo</h2>
+                    <p>Peças únicas que</p>
+                    <p>traduzem estilo,</p>
+                    <p>personalidade e elegância.</p>
+                </div>
+                <div class="linhaEspeciais"></div>
+                <div class="artesanalEspeciais">
+                    <div class="imgEspeciais"><img src="img/coracao-especiais.png" alt=""></div>
+                    <h2>Detalhes</h2>
+                    <p>Acabamentos</p>
+                    <p>refinados que fazem</p>
+                    <p>toda a diferença.</p>
+                </div>
+            </div>
+        </div>
+        <div id="detalhesInspiram">
+            <div class="titulosEspeciais">
+                <div class="linhaTitulosEspeciais"></div>
+                <p>DETALHES QUE INSPIRAM</p>
+                <div class="linhaTitulosEspeciais"></div>
+            </div>
+            <div id="espaçoInspiram">
+                <div class="imgInspiram"><img src="img/colar tapete 1.jpg" alt=""></div>
+                <div class="espacoInspiram"></div>
+                <div class="imgInspiram"><img src="img/colar na almofada.jpg" alt=""></div>
+                <div class="espacoInspiram"></div>
+                <div class="imgInspiram"><img src="img/colar de mesa marrom.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <footer><!-- Rodapé -->
+        <div id="espacoFooter">
+
+            <div id="footerLogo">
+                <img src="img/Cartao zambi.jpg" alt="">
+            </div>
+            <div class="linhaFooter"></div>
+            <div id="footerSobre">
+                <p class="tituloFooter">INSTITUCIONAL</p>
+                <div class="miniLinhaFooter"></div>
+                <a href="sobre.html">
+                    <p id="sobreFooter">Sobre nós</p>
+                </a>
+            </div>
+            <div class="linhaFooter"></div>
+            <div id="footerSiga">
+                <p class="tituloFooter">SIGA-NOS</p>
+                <div class="miniLinhaFooter"></div>
+                <div id="perfisFooter">
+                    <div class="sigaPerfil" onclick="abrirInsta()"><img src="img/instagram-icon.png" alt=""></div>
+                    <div class="sigaPerfil" onclick="abrirFace()"><img src="img/facebook-icon.png" alt=""></div>
+                    <!--Ainda tem que fazer as contas -->
+                    <div class="sigaPerfil" onclick="abrirPin()"><img src="img/pinterest-icon.png" alt=""></div>
+                    <!--Ainda tem que fazer as contas -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="baixoFooter">
+        <div id="linhaDecoFooter">
+            <div class="linhaBaixo"></div>
+            <img src="img/flower-icon.png" alt="">
+            <div class="linhaBaixo"></div>
+        </div>
+        <div id="direitosFooter">© 2026 Zambi Decora. Todos os direitos reservados.</div>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,507 @@
+#sobreNos {
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tituloSobreNos {
+    width: 100%;
+    max-width: 1045px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color:  #c9a86a;
+}
+
+#fraseSobreNos {
+    width: 100%;
+    max-width: 1045px;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#espacoFraseSobre{
+    height: 100%;
+    width: 700px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    p {
+        margin-left: 30px;
+        margin-right: 30px;
+        text-align: center;
+    }
+    h2 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+#todoespacoSobreNos{
+    width: 100%;
+    height: auto;
+    background-color: rgb(236, 234, 233);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#espacoSobreNos {
+    width: 100%;
+    max-width: 1045px;
+    height: 400px;
+    background-color: rgb(236, 234, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#imgNossaHistoria{
+    width: 420px;
+    height: 350px;
+    overflow: hidden;
+}
+#imgNossaHistoria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#nossaHistoria{
+    width: 480px;
+    height: 350px;
+    background-color: rgb(236, 234, 233);
+    padding: 30px;
+
+}
+#tituloHistoria{
+    font-weight: 500;
+    -webkit-text-stroke: 0.5px currentColor;
+    font-size: 33px;
+    color:  #011f46;
+}
+
+#linhaHistoria {
+    width: 80px;
+    height: 2px;
+    background-color: #c9a86a;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+#tornarEspeciais {
+    width: 100%;
+    max-width: 1045px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.titulosEspeciais{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-weight: 500;
+        -webkit-text-stroke: 0.5px currentColor;
+        font-size: 21px;
+        color:  #011f46;
+    }
+}
+
+.linhaTitulosEspeciais{
+    width: 60px;
+    height: 2px;
+    background-color: #c9a86a;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#espacoEspeciais{
+    width: 100%;
+    height:220px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.artesanalEspeciais{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h2 {
+        color: #011f46;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}
+
+.imgEspeciais{
+    width: 75px;
+    height: 75px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    border: 2px solid #c9a86a;
+}
+
+.imgEspeciais img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    margin-top: 4%;
+}
+.linhaEspeciais {
+    width: 2px;
+    height: 55%;
+    background-color: #c9a86a;
+    margin-top: auto;
+    margin-bottom: 25px;    
+}
+#detalhesInspiram {
+    width: 100%;
+    max-width: 1045px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 45px;
+}
+
+#espaçoInspiram{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgInspiram {
+    height: 220px;
+    width: 300px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.imgInspiram img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.espacoInspiram{
+    width: 25px;
+    height: 220px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/*------RESPONSIVIDADE------*/
+
+@media (max-width: 1075px){
+    #tituloSobreNos{
+        width: 100%;
+        max-width: 768px;
+        font-size: 34px;
+    }
+    #fraseSobreNos{
+        width: 100%;
+        max-width: 768px;
+    }
+    #espacoSobreNos{
+        width: 100%;
+        max-width: 768px;
+    }
+    #imgNossaHistoria{
+        width: 390px;
+        height: 350px;
+    }
+    #nossaHistoria{
+        width: 400px;
+        height: 380px;
+    }
+    #tituloHistoria{
+        font-size: 32px;
+    }
+
+    #tornarEspeciais{
+        width: 100%;
+        max-width: 768px;
+    }
+    .titulosEspeciais{
+        p{
+            font-size: 20px;
+        }
+    }
+    #detalhesInspiram{
+        width: 100%;
+        max-width: 768px;
+    }
+    .imgInspiram{
+        height: 190px;
+        width: 270px;
+    }
+    .espacoInspiram{
+        width: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    #areaBotaoVoltar{
+        button{
+            font-size: 10px;
+        }
+    }
+    #tituloSobreNos{
+        width: 100%;
+        max-width: 580px;
+        font-size: 30px;
+        height: 40px;
+    }
+    #fraseSobreNos{
+        width: 100%;
+        max-width: 580px;
+    }
+    #espacoFraseSobre{
+        h2 {
+            font-size: 22px;
+        }
+    }
+    #espacoSobreNos{
+        width: 100%;
+        max-width: 580px;
+        flex-wrap: wrap;
+        height: auto;
+
+    }
+    #imgNossaHistoria{
+        width: 430px;
+        height: 350px;
+    }
+    #nossaHistoria{
+        width: 480px;
+        height: 350px;
+    }
+    #tituloHistoria{
+        font-size: 32px;
+    }
+
+    #tornarEspeciais{
+        width: 100%;
+        max-width: 580px;
+    }
+    .titulosEspeciais{
+        p{
+            font-size: 18px;
+        }
+    }
+    #espacoEspeciais{
+        height: 200px;
+    }
+    .artesanalEspeciais{
+        width: 33%;
+        h2{
+            font-size: 22px;
+        }
+    }
+    .imgEspeciais{
+        width: 70px;
+        height: 70px;
+    }
+    #detalhesInspiram{
+        width: 100%;
+        max-width: 580px;
+        height: auto;
+    }
+    #espaçoInspiram{
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .imgInspiram{
+        height: 320px;
+        width: 400px;
+    }
+    .espacoInspiram{
+        width: 0px;
+        height: 0px;
+    }
+
+}
+
+@media (max-width: 580px){
+    #tituloSobreNos{
+        width: 100%;
+        max-width: 480px;
+        font-size: 30px;
+        height: 40px;
+    }
+    #fraseSobreNos{
+        width: 100%;
+        max-width: 480px;
+        height: 140px;
+    }
+    #espacoFraseSobre{
+        p{
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 18px;
+        }
+    }
+    #espacoSobreNos{
+        width: 100%;
+        max-width: 480px;
+        flex-wrap: wrap;
+        height: auto;
+
+    }
+    #imgNossaHistoria{
+        width: 410px;
+        height: 330px;
+    }
+    #nossaHistoria{
+        width: 450px;
+        height: 320px;
+        font-size: 14px;
+    }
+    #tituloHistoria{
+        font-size: 27px;
+    }
+
+    #tornarEspeciais{
+        width: 100%;
+        max-width: 480px;
+    }
+    .titulosEspeciais{
+        p{
+            font-size: 17px;
+        }
+    }
+    #espacoEspeciais{
+        height: 185px;
+    }
+    .artesanalEspeciais{
+        width: 33%;
+        font-size: 14px;
+        h2{
+            font-size: 16px;
+        }
+    }
+    .imgEspeciais{
+        width: 60px;
+        height: 60px;
+    }
+    #detalhesInspiram{
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+    }
+    .imgInspiram{
+        height: 270px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 480px){
+    #tituloSobreNos{
+        width: 100%;
+        max-width: 320px;
+        font-size: 25px;
+        height: 30px;
+    }
+    #fraseSobreNos{
+        width: 100%;
+        max-width: 320px;
+        height: 140px;
+        margin-bottom: 0px;
+    }
+    #espacoFraseSobre{
+        p{
+            font-size: 11px;
+        }
+        h2 {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+    }
+    #espacoSobreNos{
+        width: 100%;
+        max-width: 320px;
+        flex-wrap: wrap;
+        height: auto;
+
+    }
+    #imgNossaHistoria{
+        width: 320px;
+        height: 240px;
+    }
+    #nossaHistoria{
+        width: 320px;
+        height: 250px;
+        font-size: 11px;
+    }
+    #tituloHistoria{
+        font-size: 20px;
+    }
+
+    #tornarEspeciais{
+        width: 100%;
+        max-width: 320px;
+        margin-bottom: 15px;
+    }
+    .titulosEspeciais{
+        height: 40px;
+        p{
+            font-size: 13px;
+        }
+    }
+    #espacoEspeciais{
+        height: 165px;
+    }
+    .artesanalEspeciais{
+        width: 33%;
+        font-size: 11px;
+        justify-content: initial;
+        text-align: center;
+        padding-top: 12px;
+        h2{
+            font-size: 15px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+        }
+    }
+    .imgEspeciais{
+        width: 50px;
+        height: 50px;
+    }
+    .linhaTitulosEspeciais{
+        width: 45px;
+    }
+    #detalhesInspiram{
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin-bottom: 25px;
+    }
+    .imgInspiram{
+        height: 190px;
+        width: 270px;
+        margin-bottom: 11px;
+        margin-top: 2px;
+    }
+}
