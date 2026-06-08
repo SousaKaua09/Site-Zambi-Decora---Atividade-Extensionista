@@ -40,17 +40,26 @@
     justify-content: center;
 }
 #tituloCatalogo{
-    width: 50%;
+    width: auto;
     height: 100%;
     background-color: rgb(255, 255, 255);
     justify-content: center;
     display: flex;
-    
+    flex-direction: column;
+    align-items: center;
 }
 
 #fraseCatalogo{
     font-size: 40px;
     color:  #c9a86a;
+}
+#miniFraseCategoria{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 13px;
+    color: #002e6b;
+    margin-bottom: 20px;
 }
 
 #areaCatalogo{
@@ -103,7 +112,10 @@
         max-width: 580px;
     }
     #fraseCatalogo{
-    font-size: 30px;
+        font-size: 30px;
+    }
+    #miniFraseCategoria{
+        font-size: 12px;
     }
     #superiorCatalogo{
         height: 70px;
@@ -126,6 +138,9 @@
     }
     #fraseCatalogo{
     font-size: 25px;
+    }
+    #miniFraseCategoria{
+        font-size: 10px;
     }
     #superiorCatalogo{
         height: 50px;
