@@ -94,7 +94,7 @@ a{
 .imagemPrincipalProduto img{
     width: 550px;
     height: 400px;
-    object-fit: cover;
+    object-fit:cover;
     border-radius: 20px;
     cursor: pointer;
 }

@@ -1,6 +1,9 @@
 function abrirProduto(){
     window.location.href = "modeloProduto.html"
 }
+function abrirPC001(){
+    window.location.href = "PingenteCortina001.html"
+}
 
 function abrirCatalogo(){
     window.location.href = "catalogo.html"

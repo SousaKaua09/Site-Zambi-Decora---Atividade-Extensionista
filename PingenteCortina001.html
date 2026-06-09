@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zambi Decora</title>
     <link rel="stylesheet" href="css/stlilo.css">
-    <link rel="stylesheet" href="css/stiloCatalogo.css">
+    <link rel="stylesheet" href="css/stliloProduto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -14,6 +14,8 @@
 </head>
 
 <body>
+    <script src="js/linkar.js"></script>
+
     <style>
         #inicio {
 
@@ -34,12 +36,8 @@
                 text-underline-offset: 0px
             }
         }
-
-        #mensagem {
-            margin-top: 0px;
-        }
     </style>
-    <script src="js/linkar.js"></script>
+
     <header><!-- Cabeçalho -->
         <div id="espacoLogo">
             <div id="logo">
@@ -63,67 +61,85 @@
         </div>
 
     </div>
-
     <div id="espacoHeader"></div> <!--Espaço entre a header e o main é isso-->
+
+
     <div id="areaBotaoVoltar">
         <button id="botaoVoltar" onclick="voltarPagina()"> ← Voltar</button>
     </div>
 
-    <main><!-- Catálogo Geral dos Produtos -->
-        <div id="catalogoProduto">
-            <div id="superiorCatalogo">
-                <div id="tituloCatalogo">
-                    <p id="fraseCatalogo">Colar de Mesa</p>
-                    <p id="miniFraseCategoria">CATEGORIA</p>
-                </div>
+    <div id="informacaoProduto">
+        <div class="imagemProduto">
+            <div class="miniaturaImgProduto">
+                <img class="ativa" src="img/Img4-Produto-PC-001.jpeg" onclick="trocarImagem(this)">
+                <img src="img/Img2-Produto-PC-001.jpeg" onclick="trocarImagem(this)">
+                <img src="img/Img3-Produto-PC-001.jpeg" onclick="trocarImagem(this)">
+                <img src="img/Img1-Produto-PC-001-FundoBranco.png" onclick="trocarImagem(this)">
             </div>
-            <div id="areaCatalogo">
-                <div id="espacoCatalogo"> <!--Onde colocar os card no destaque-->
-                </div>
+            <div class="imagemPrincipalProduto">
+                <img src="img/Img4-Produto-PC-001.jpeg" id="imagemGrande">
+            </div>
+            <div class="modal" id="modal">
+                <img id="imagemModal">
             </div>
         </div>
+        <div id="dadosProduto">
+            <div id="fraseCategoriaProduto">PINGENTE DE CORTINA</div>
+            <div id="nomeProduto">Pingente De Cortina Artesanal - Zambi Decora</div>
+            <div id="valorProduto">R$ 219,90</div>
+            <div id="descricaoProduto">
+                <p>A Zambi Decora se destaca por oferecer produtos que valorizam a arte artesanal e o design único,
+                    ideal para aqueles que apreciam o que há de melhor em decoração. Transforme seu espaço com a
+                    sofisticação e a leveza do Pingente de Cortina Artesanal. <br>
+                    <br>
+                    O par de pingentes nas medidas:  
+                    Altura = 1,40m
+                    Peso = 2,56kg
+                    <br>
+                    Cordão com pedra, madeira e resina</p>
+            </div>
+            <div id="linhaDescricao"></div>
+            <div id="mensagemProduto"><img src="img/flor-icone-produto.png" alt="">
+                <p id="mensagemBonita">Cada peça carrega uma essência única, feita com cuidado e alma artesanal.</p>
+            </div>
+            <a href="https://produto.mercadolivre.com.br/MLB-4750213425-pingente-de-cortina-artesanal-zambi-decora-_JM">
+                <div id="botaoProduto"><button>COMPRAR PRODUTO</button></div>
+            </a>
+        </div>
+    </div>
 
-        <div id="categoria">
-            <div id="espaçoCarro"></div>
-            <div id="fraseCategoria">
+
+    <div id="sugestaoProduto">
+        <div id="sugestaoCards">
+            <div id="tituloSugestao">
+                <div id="detalheLinha">⋘◊</div>
                 <div class="linhaCate"></div>
-                <p>NAVEGUE POR CATEGORIAS</p>
+                <p>VOCÊ PODE GOSTAR</p>
                 <div class="linhaCate"></div>
+                <div id="detalheLinha">◊⋙</div>
             </div>
-            <div id="espacoCategoria">
-                <div class="categoria1" onclick="abrirCategoriaPingente()">
-                    <div class="imgCategoria"><img src="img/pingente de cortina 2.jpg" alt=""></div>
-                    <div class="textCategoria">Pingente de Cortina</div>
+            <div id="espacoDestaque"> <!--Onde colocar os card no destaque-->
+                <div class="cardProduto" onclick="abrirProduto()">
+                    <div class="imgCard"><img src="img/exemploimg.webp" alt=""></div>
+                    <div class="textCard">
+                        <p>Exemplo de Produto nome grande big</p>
+                        <b class="valorCard">R$ 100,00</b>
+                    </div>
                 </div>
-                <div class="espacamentoCategoria"></div>
-                <div class="categoria1" onclick="abrirCategoriaColarMesa()">
-                    <div class="imgCategoria"><img src="img/colar de mesa cate.jpg" alt=""></div>
-                    <div class="textCategoria">Colar de Mesa</div>
-                </div>
-                <div class="espacamentoCategoria"></div>
 
-                <div class="categoria1" onclick="abrirCategoriaColarParede()">
-                    <div class="imgCategoria"><img src="img/colar parede ia.jpg" alt=""></div>
-                    <div class="textCategoria">Colar de Parede</div>
-                </div>
-                <div class="espacamentoCategoria"></div>
-
-                <div class="categoria1" onclick="abrirCategoriaAbracadeira()">
-                    <div class="imgCategoria"><img src="img/abracadeira de cortina 1.jpg" alt=""></div>
-                    <div class="textCategoria">Abraçadeira de Cortina</div>
-                </div>
-                <div class="espacamentoCategoria"></div>
-
-                <div class="categoria1" onclick="abrirCatalogo()">
-                    <div class="imgCategoria"><img src="img/arranjo-outros.jpg" alt=""></div>
-                    <div class="textCategoria">Outros</div>
+                <div class="cardProduto" onclick="abrirProduto()">
+                    <div class="imgCard"><img src="img/exemploimg.webp" alt=""></div>
+                    <div class="textCard">
+                        <p>Exemplo de Produto</p>
+                        <b class="valorCard">R$ 100,00</b>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="mensagem">
-            <a href="sobre.html"><img src="img/mensagem 2.0.png" alt=""></a>
+        <div id="imagemSugestao">
+            <img src="img/imagem -detalhe- hitoria.png" alt="">
         </div>
-    </main>
+    </div>
 
     <footer><!-- Rodapé -->
         <div id="espacoFooter">
@@ -161,6 +177,8 @@
         </div>
         <div id="direitosFooter">© 2026 Zambi Decora. Todos os direitos reservados.</div>
     </div>
+
+    <script src="js/imagem.js"></script>
 </body>
 
 </html>
